@@ -9,17 +9,17 @@ def decrypt(message):
         for symbol in message:      # for every character in the message
             if symbol in letters:   # if the character is alaphabetical
                 num = letters.find(symbol)
-                num = num - key       # change it by the key number
+                num -= key          # change it by the key number
 
                 if num < 0:
-                    num = num + len(letters)
+                    num += len(letters)
 
                 # add symbol to decrypted_message
-                decrypted_messages = decrypted_messages + letters[num]
+                decrypted_messages += letters[num]
             else:
                 # symbol is not alphabetic
                 # add it to decrypted_message
-                decrypted_messages = decrypted_messages + symbol
+                decrypted_messages += symbol
 
         print(decrypted_messages)
 
