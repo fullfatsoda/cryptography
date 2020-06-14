@@ -1,4 +1,4 @@
-message = "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn"
+message = "The quick brown fox jumps over the lazy dog."
 
 def encrypt(message, key):
     encrypted_message = ""      # encrypted message to return
@@ -29,4 +29,4 @@ def encrypt(message, key):
 
     return encrypted_message
 
-print(encrypt(message, 1))
+print(encrypt(message, 10))

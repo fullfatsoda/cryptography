@@ -1,4 +1,4 @@
-message = "Qi'ohmvj nhmx'obgi Duivmiv S'mzfi xhbi'obhm giubho"
+message = "Dro aesmu lbygx pyh tewzc yfob dro vkji nyq."
 
 def decrypt(message, key):
     key = -key
@@ -30,4 +30,4 @@ def decrypt(message, key):
 
     return decrypted_message
 
-print(decrypt(message, 1))
+print(decrypt(message, 10))
