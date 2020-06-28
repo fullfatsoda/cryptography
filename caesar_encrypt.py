@@ -1,5 +1,6 @@
 message = "The quick brown fox jumps over the lazy dog."
 
+
 def encrypt(message, key):
     encrypted_message = ""      # encrypted message to return
     for symbol in message:      # for every character in the message
@@ -28,5 +29,6 @@ def encrypt(message, key):
             encrypted_message += symbol
 
     return encrypted_message
+
 
 print(encrypt(message, 10))

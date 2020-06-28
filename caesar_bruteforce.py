@@ -3,8 +3,9 @@
 message = "Dro aesmu lbygx pyh TEWZC yfob dro vkji nyq.".lower()
 letters = 'abcdefghijklmnopqrstuvwxyz'
 
+
 def decrypt(message):
-    for key in range(len(letters)): # 26 possible keys
+    for key in range(len(letters)):  # 26 possible keys
         decrypted_messages = ""     # decrypted messages to return
         for symbol in message:      # for every character in the message
             if symbol in letters:   # if the character is alaphabetical
@@ -22,5 +23,6 @@ def decrypt(message):
                 decrypted_messages += symbol
 
         print(decrypted_messages)
+
 
 decrypt(message)

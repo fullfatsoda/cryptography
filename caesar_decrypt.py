@@ -1,5 +1,6 @@
 message = "Dro aesmu lbygx pyh tewzc yfob dro vkji nyq."
 
+
 def decrypt(message, key):
     key = -key
     decrypted_message = ""      # decrypted message to return
@@ -29,5 +30,6 @@ def decrypt(message, key):
             decrypted_message += symbol
 
     return decrypted_message
+
 
 print(decrypt(message, 10))
